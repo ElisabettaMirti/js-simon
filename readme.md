@@ -10,3 +10,17 @@ Consigli del giorno:
     Pensate prima in italiano.
     Dividete in piccoli problemi la consegna.
     Individuate gli elementi di cui avete bisogno per realizzare il programma.
+
+
+
+
+>Creo gli articles per inserire il contenuto
+    >appendo gli articoli al container
+
+>Creo una funzione per produrre numeri randomici unici
+    >La applico ad ogni articolo
+    >pusho i numeri in un array
+
+>Creo il timer con l'Interval
+
+>Creo il prompt per i numeri dell'utente, e li metto in un altro array

@@ -1,0 +1,24 @@
+body{
+    font-family: sans-serif;
+}
+
+header{
+    text-align: center;
+}
+
+main{
+    background-color: rgb(40, 18, 60);
+    color: white;
+}
+
+div.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container>article{
+    width: 200px;
+    height: 400px;
+    border: 1px solid white;
+}
