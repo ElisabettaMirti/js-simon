@@ -5,6 +5,7 @@ const containerEl = document.querySelector('div.container'); //variabile per il 
 for (let i = 0; i < 5; i++){
     const articleEl = document.createElement('article');
     articleEl.classList.add('num');
+    articleEl.append(getRandomNum(1, 99));
     containerEl.appendChild(articleEl);
 }
 
@@ -22,3 +23,9 @@ for (let i = 0; i < 5; i++){
 //         alert("Time's out!")
 //     }
 // }, 1000);
+
+
+function getRandomNum(min, max) {
+    num = Math.floor(Math.random() * ((max + 1) - min)) + min;
+    return num;
+}
