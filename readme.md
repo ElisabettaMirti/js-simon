@@ -24,3 +24,7 @@ Consigli del giorno:
 >Creo il timer con l'Interval
 
 >Creo il prompt per i numeri dell'utente, e li metto in un altro array
+
+>Confronto l'array dei numeri random con quello dell'utente
+    >se il numero all'indice corrisponde, lo inserisco in un altro array
+    >mostro quest'ultimo array con i numeri indovinati all'utente

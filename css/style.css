@@ -1,4 +1,7 @@
 body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
     font-family: sans-serif;
     background-color: rgb(197, 179, 214);
 }
@@ -13,15 +16,21 @@ main{
 }
 
 div.container{
-    width: 100%;
+    width: 600px;
     height: 400px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1rem;
+}
+
+.container>article.num{
+    width: 100px;
+    height: 150px;
+    border: 1px solid white;
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-.container>article{
-    width: 100px;
-    height: 200px;
-    border: 1px solid white;
+    font-size: 40px;
 }
