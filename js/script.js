@@ -1,4 +1,4 @@
-let playTime = 30;
+let playTime = 3;
 
 const containerEl = document.querySelector('div.container'); //variabile per il container
 
@@ -22,20 +22,46 @@ for (let i = 0; i < guessNum.length; i++){
     containerEl.appendChild(articleEl);
 }
 
+//creo il timer
+
+const timer = setInterval( function(){
+    playTime--;
+    console.log(playTime);
+    if( playTime <= 0){
+        containerEl.innerHTML = '';
+        clearInterval(timer);
+        alert("Time's out!");
+    }
+}, 1000);
+
+let userNum = [];
+
+simonSays();
+
+
+function simonSays (){    
+    for (let i = 0; i < guessNum.length; i++){
+        let userGuess = Number.parseInt(prompt('Type each number and click enter'), 10);
+        userNum.push(userGuess);
+    }
+    let correctNum = [];
+
+    if (guessNum[i] === userNum[i]) {
+        correctNum.push(guessNum[i]);
+    }
+    containerEl.innerHTML("Questi sono giusti!" + correctNum);
+    return correctNum
+}
 
 
 
 
 
 
-// const timer = setInterval( function(){
-//     playTime--;
-//     console.log(playTime);
-//     if( playTime <= 0){
-//         clearInterval(timer);
-//         alert("Time's out!")
-//     }
-// }, 1000);
+
+
+
+
 
 
 function getRandomNum(min, max) {
