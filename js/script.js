@@ -31,23 +31,24 @@ const timer = setInterval( function(){
         containerEl.innerHTML = '';
         clearInterval(timer);
         alert("Time's out!");
+        simonSays(guessNum);
     }
 }, 1000);
 
 let userNum = [];
 
-simonSays();
 
 
-function simonSays (){    
-    for (let i = 0; i < guessNum.length; i++){
+
+function simonSays (randomArray){    
+    for (let i = 0; i < randomArray.length; i++){
         let userGuess = Number.parseInt(prompt('Type each number and click enter'), 10);
         userNum.push(userGuess);
     }
     let correctNum = [];
 
-    if (guessNum[i] === userNum[i]) {
-        correctNum.push(guessNum[i]);
+    if (randomArray[i] === userNum[i]) {
+        correctNum.push(randomArray[i]);
     }
     containerEl.innerHTML("Questi sono giusti!" + correctNum);
     return correctNum
