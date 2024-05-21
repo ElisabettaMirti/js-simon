@@ -14,8 +14,6 @@ Consigli del giorno:
 
 
 
->Creo gli articles per inserire il contenuto
-    >appendo gli articoli al container
 
 >Creo una funzione per produrre numeri randomici unici
     >La applico ad ogni articolo
